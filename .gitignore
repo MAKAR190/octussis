@@ -1,14 +1,6 @@
 # Node modules
 node_modules/
 
-# Build output
-dist/
-build/
-
-# Tailwind CSS output (if using a custom build)
-*.css
-!styles.css # Assuming styles.css is your main source file
-*.css.map
 
 # Logs
 npm-debug.log*
