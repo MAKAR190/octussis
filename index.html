@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octussis</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#141A43]">
+    <nav
+      class="bg-white/30 backdrop-blur-lg shadow-lg isolate fixed top-0 left-0 h-[65px] w-full z-10"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#main" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/Octussis_Logo.png" class="h-8" alt="Octussis Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-200 hover:bg-gray-700 focus:ring-gray-600"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+          id="menu-button"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent md:backdrop-blur-none md:shadow-none sm:bg-white/30 sm:backdrop-blur-lg sm:shadow-lg sm:isolate"
+          >
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 md:p-0 text-white hover:text-[#4BEEE7] rounded"
+                aria-current="page"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 md:p-0 text-white hover:text-[#4BEEE7] rounded"
+                aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="scroll-container">
+      <main>
+        <section class="scroll-section" id="main">
+          <div
+            id="content"
+            class="text-center flex justify-center mx-auto h-full w-[70%] flex-col"
+          >
+            <h1
+              class="lg:text-9xl md:text-7xl sm:text-6xl drop-shadow-xl text-white font-['Inter'] font-bold"
+            >
+              Octussis
+            </h1>
+          </div>
+        </section>
+        <section
+          id="about"
+          class="scroll-section mt-30 w-full h-fit py-10 px-4"
+        >
+          <p
+            class="text-md font-['Inter'] text-gray-300 pt-40 lg:text-7xl md:text-5xl max-[450px]:text-3xl sm:pt-20 max-[768px]:text-4xl"
+          >
+            We are an
+            <span
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="text-blue-400 font-bold"
+              >investment origination</span
+            >
+            company with focus on
+            <span
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="text-green-400 font-bold"
+              >rail and road infrastructure</span
+            >,
+            <span
+              data-aos="fade-up"
+              data-aos-delay="300"
+              class="text-yellow-400 font-bold"
+              >water and sewage infrastructure</span
+            >,
+            <span
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="text-red-400 font-bold"
+              >postal and logistic infrastructure</span
+            >,
+            <span
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="text-purple-400 font-bold"
+              >energy and renewable infrastructure</span
+            >,
+            <span
+              data-aos="fade-up"
+              data-aos-delay="600"
+              class="text-pink-400 font-bold"
+              >data infrastructure</span
+            >,
+            <span
+              data-aos="fade-up"
+              data-aos-delay="700"
+              class="text-teal-400 font-bold"
+              >farming and forestry</span
+            >.
+          </p>
+        </section>
+      </main>
+      <footer id="contact" class="scroll-section relative shadow w-full">
+        <div class="text-center text-white h-[50vh] pt-40">
+          <h2
+            class="lg:text-9xl md:text-7xl sm:text-6xl drop-shadow-xl font-['Inter'] font-bold"
+          >
+            Contact Us
+          </h2>
+          <div class="py-20 flex flex-col max-w-[99%]">
+            <a
+              href="https://www.google.com/maps?q=4.0777,9.7085"
+              target="_blank"
+              class="map-link hover:underline underline-offset-1"
+            >
+              58, Samuel Adedoyin, Victoria Island, Lagos, Nigeria
+            </a>
+
+            <a
+              class="hover:underline underline-offset-1"
+              href="mailto:contact@octussis.com"
+              >contact@octussis.com</a
+            >
+          </div>
+        </div>
+        <div
+          class="w-full absolute bottom-0 max-w-screen-xl mx-auto p-4 md:py-8 pt-20"
+        >
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="#main"
+              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="assets/Octussis_Logo.png"
+                class="h-8"
+                alt="Octussis Logo"
+              />
+            </a>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                <a href="#contact" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <span
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >
+            © 2024 <a href="#main" class="hover:underline">Octussis™</a>. All
+            Rights Reserved.
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/three.r134.min.js"></script>
+    <script src="js/vanta.halo.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
