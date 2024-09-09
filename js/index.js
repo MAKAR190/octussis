@@ -1,11 +1,7 @@
 "use strict";
 
-const menuButton = document.getElementById("menu-button");
 const navbarSolidBg = document.getElementById("navbar-solid-bg");
 
-menuButton.addEventListener("click", function () {
-  navbarSolidBg.classList.toggle("hidden");
-});
 
 
 VANTA.HALO({
