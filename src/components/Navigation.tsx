@@ -29,37 +29,37 @@ import Link from "next/link";
 const businesses = [
   {
     name: "Octussis Analytics",
-    href: "/analytics",
+    href: "#analytics",
     icon: PresentationChartBarIcon,
   },
   {
     name: "Octussis Apparel",
-    href: "/apparel",
+    href: "#apparel",
     icon: TagIcon,
   },
   {
     name: "Octussis Capital",
-    href: "/capital",
+    href: "#capital",
     icon: BanknotesIcon,
   },
   {
     name: "Octussis Green",
-    href: "/green",
+    href: "#green",
     icon: SunIcon,
   },
   {
     name: "Octussis Infra",
-    href: "/infra",
+    href: "#infra",
     icon: TruckIcon,
   },
   {
     name: "Octussis Sports",
-    href: "/sports",
+    href: "#sports",
     icon: TrophyIcon,
   },
   {
     name: "Octussis Transport",
-    href: "/transport",
+    href: "#transport",
     icon: TruckIcon,
   },
 ];
@@ -97,9 +97,9 @@ export default function Navigation() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link href="/about" className="text-sm/6 font-semibold text-white">
+          <a href="#about" className="text-sm/6 font-semibold text-white">
             About Us
-          </Link>
+          </a>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
               Our Businesses
@@ -139,12 +139,12 @@ export default function Navigation() {
               </div>
             </PopoverPanel>
           </Popover>
-          <Link
-            href="/contact"
+          <a
+            href="#contact"
             className="text-sm/6 font-semibold text-white"
           >
             Contact Us
-          </Link>
+          </a>
         </PopoverGroup>
       </nav>
       <Dialog
@@ -178,12 +178,12 @@ export default function Navigation() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link
-                  href="/about"
+                <a
+                  href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   About Us
-                </Link>
+                </a>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     Our Businesses
@@ -205,12 +205,12 @@ export default function Navigation() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <Link
-                  href="/contact"
+                <a
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </Link>
+                </a>
               </div>
             </div>
           </div>

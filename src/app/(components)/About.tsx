@@ -2,68 +2,38 @@
 
 export default function About() {
   return (
-    <div
-      className="mt-30 w-full h-screen py-10 px-4 relative flex flex-col items-center justify-center"
-    >
-      <p className="text-md text-center w-[70%] positioned-center font-['Inter'] text-gray-300 pt-40 lg:text-4xl md:text-3xl max-[450px]:text-xl sm:pt-20 max-[768px]:text-2xl">
-        We are an
-        <span
-          data-aos="fade-up"
-          data-aos-delay="100"
-          className="text-blue-400 font-bold mx-2"
+    <div id="about" className="mx-auto max-w-7xl lg:py-24 sm:px-6 sm:py-4 lg:px-8">
+      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          About Us
+        </h2>
+        <p className="mx-auto mt-6 max-w-4xl text-pretty text-lg/8 text-gray-300">
+          We are an investment origination company with focus on{" "}
+          <b>rail and road</b> infrastructure, <b>water and sewage</b>{" "}
+          infrastructure, <b>postal and logistic</b> infrastructure,{" "}
+          <b>energy and renewable</b> infrastructure, <b>data infrastructure</b>,{" "}
+          <b>farming and forestry</b>.
+        </p>
+        <svg
+          viewBox="0 0 1024 1024"
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
         >
-          investment origination
-        </span>
-        company with focus on
-        <span
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="text-green-400 font-bold ml-2"
-        >
-          rail and road infrastructure
-        </span>
-        ,
-        <span
-          data-aos="fade-up"
-          data-aos-delay="300"
-          className="text-yellow-400 font-bold ml-2"
-        >
-          water and sewage infrastructure
-        </span>
-        ,
-        <span
-          data-aos="fade-up"
-          data-aos-delay="400"
-          className="text-red-400 font-bold ml-2"
-        >
-          postal and logistic infrastructure
-        </span>
-        ,
-        <span
-          data-aos="fade-up"
-          data-aos-delay="500"
-          className="text-purple-400 font-bold ml-2"
-        >
-          energy and renewable infrastructure
-        </span>
-        ,
-        <span
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="text-pink-400 font-bold ml-2"
-        >
-          data infrastructure
-        </span>
-        ,
-        <span
-          data-aos="fade-up"
-          data-aos-delay="700"
-          className="text-teal-400 font-bold ml-2"
-        >
-          farming and forestry
-        </span>
-        .
-      </p>
+          <circle
+            r={512}
+            cx={512}
+            cy={512}
+            fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+            fillOpacity="0.7"
+          />
+          <defs>
+            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+              <stop stopColor="#7775D6" />
+              <stop offset={1} stopColor="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
     </div>
   );
 }

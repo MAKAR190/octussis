@@ -19,7 +19,7 @@ const navigation = {
 export default function Footer() {
   return (
     <div id="contact" className="h-fit relative shadow w-full">
-      <div className="text-center text-white h-[50vh] pt-40">
+      <div className="text-center text-white pt-40">
         <div className="py-20 flex flex-col max-w-[99%]">
           <a
             href="https://www.google.com/maps?q=4.0777,9.7085"
