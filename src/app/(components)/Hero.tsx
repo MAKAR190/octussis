@@ -10,12 +10,12 @@ export default function Hero() {
   return (
     <>
       <VantaBackground />
-      <div className="h-screen">
+      <div className="h-[50vh] mt-24 lg:mt-10 lg:h-screen">
         <div
           id="content"
           className="text-center flex justify-center mx-auto h-full w-[70%] flex-col"
         >
-          <h1 className="lg:text-9xl md:text-7xl text-6xl drop-shadow-xl text-white font-bold">
+          <h1 className="lg:text-9xl uppercase md:text-7xl text-5xl drop-shadow-xl text-black font-medium">
             Octussis
           </h1>
         </div>

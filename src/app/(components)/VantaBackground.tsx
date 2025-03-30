@@ -13,7 +13,7 @@ export default function VantaBackground() {
 
   useEffect(() => {
     if (!vantaEffect) {
-      import("vanta/dist/vanta.halo.min").then((VANTA) => {
+      import("vanta/dist/vanta.globe.min").then((VANTA) => {
         setVantaEffect(
           VANTA.default({
             el: vantaRef.current,
@@ -25,8 +25,8 @@ export default function VantaBackground() {
             minWidth: 200.0,
             scale: 1.0,
             scaleMobile: 1.0,
-            color: 0x30ff82,
-            backgroundColor: new THREE.Color(0x14/255, 0x1a/255, 0x43/255),
+            color: new THREE.Color(0, 0, 0),
+            backgroundColor: new THREE.Color(255, 255, 255),
           })
         );
       });
@@ -40,8 +40,8 @@ export default function VantaBackground() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="h-screen w-full absolute -z-1 top-0 left-0">
-      <div className="h-screen w-full absolute top-0 left-0"></div>
+    <div ref={vantaRef} className="h-1/2 lg:h-screen w-full absolute -z-1 top-0 left-0">
+      <div className="h-full w-full absolute top-0 left-0"></div>
     </div>
   );
 }
