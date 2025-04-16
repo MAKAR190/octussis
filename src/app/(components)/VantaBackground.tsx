@@ -27,6 +27,7 @@ export default function VantaBackground() {
             scaleMobile: 1.0,
             color: new THREE.Color(0, 0, 0),
             backgroundColor: new THREE.Color(255, 255, 255),
+            showDots: false,
           })
         );
       });
@@ -40,7 +41,10 @@ export default function VantaBackground() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="h-1/2 lg:h-screen w-full absolute -z-1 top-0 left-0">
+    <div
+      ref={vantaRef}
+      className="h-1/2 lg:h-screen w-full absolute -z-1 top-85 left-85 transform -translate-x-1/2 -translate-y-1/2"
+    >
       <div className="h-full w-full absolute top-0 left-0"></div>
     </div>
   );
